@@ -23,12 +23,16 @@ There is an API URL on Infoeduka that sends the user a big JSON file containing 
 There is a problem, however, in order to access the JSON data, authentication is required, otherwise you will get an HTTP 401 error. This means that the scraper needs some form of authentication data, like a cookie (which it does use in order to authenticate), in order to fetch the appropriate links and to also fetch the files themselves. When the user has been authorized the cookie is then passed on to the HTTP request and the JSON fetch can be made, which in turn, gives the program knowledge of the links for all of the study materials. Now that the program has the links, it will start downloading the files one by one (hope to implement parallel downloading soon...) and log them to the console for info. Once the download has finished, the app can be closed, and you're done!
 
 ## CLI Usage
-You can run the program in a CLI like this: `python infoedukascrape.py --path "C:\Path\To\File\Outputs"` <br> or via the executable `infoedukascrape-cli.exe --path "C:\Path\To\File\Outputs"` <br>
+You can run the program in a CLI like this: `python infoedukascrape.py --path "C:\Path\To\File\Outputs"` <br> or via the executable `.\infoedukascrape-cli.exe --path "C:\Path\To\File\Outputs"` <br>
 Use: `-h` or `--help` to print out information about the program <br>
 Use: `-p` or `--path` followed by the path to the download directory, to specify the download directory. **This is mandatory** <br>
 Use: `-c` or `--cookie` followed by your authentication cookie to manually specify your cookie instead of a web prompt. You should pass it like this `--cookie "6hdoaedhhbgc57lld1cpd0ifq7"`   <br>
-If the `-c` or `--cookie` was not specified the program will prompt the user for the login in a browser
+If the `-c` or `--cookie` was not specified the program will prompt the user for the login in a browser <br>
 Use: `-s` or `--show-cookie` to print your cookie in the console before the download begins, this is hidden by default <br>
+
+## CLI Examples
+`.\infoedukascrape-cli.exe -p "C:\Users\myuser\Downloads\"`
+`.\infoedukascrape-cli.exe --path "C:\Users\myuser\Downloads\" --cookie "6hdoaedhhbgc57lld1cpd0ifq7" --show-cookie`
 
 ## Future ideas
 - Implement parallel downloading
