@@ -25,8 +25,8 @@ There is a problem, however, in order to access the JSON data, authentication is
 ## CLI Usage
 You can run the program in a CLI like this: `python infoedukascrape.py --path "C:\Path\To\File\Outputs"` <br> or via the executable `infoedukascrape-cli.exe --path "C:\Path\To\File\Outputs"` <br>
 Use: `-h` or `--help` to print out information about the program <br>
-Use: `-p` or `--path` to specify the download directory, **this is mandatory** <br>
-Use: `-c` or `--cookie` to manually specify your authentication cookies you should pass it like this `--cookies "6hdoaedhhbgc57lld1cpd0ifq7"` <br>
+Use: `-p` or `--path` followed by the path to the download directory, to specify the download directory. **This is mandatory** <br>
+Use: `-c` or `--cookie` followed by your authentication cookie to manually specify your cookie instead of a web prompt. You should pass it like this `--cookie "6hdoaedhhbgc57lld1cpd0ifq7"`   <br>
 If the `-c` or `--cookie` was not specified the program will prompt the user for the login in a browser
 Use: `-s` or `--show-cookie` to print your cookie in the console before the download begins, this is hidden by default <br>
 
