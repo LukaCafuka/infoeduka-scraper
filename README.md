@@ -34,6 +34,10 @@ If the `-c` or `--cookie` was not specified the program will prompt the user for
 `.\infoedukascrape-cli.exe -p "C:\Users\myuser\Downloads\"` <br>
 `.\infoedukascrape-cli.exe --path "C:\Users\myuser\Downloads\" --cookie "6hdoaedhhbgc57lld1cpd0ifq7" --show-cookie`
 
+## Known issues
+- Clicking 'Quit' while downloading on the GUI crashes the app
+- Tkinter on MacOS displays nothing on the screen (maybe due to my system)
+
 ## Future ideas
 - Implement parallel downloading
 - Add option to specify which collage subject to download
