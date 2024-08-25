@@ -9,6 +9,8 @@
 This program comes in two variations: **GUI and CLI**, if you aren't experienced with the terminal it's recommended to use the GUI version.
 As seen from the image above.
 
+###### Croatian documentation is available [here!](docs/README-HR.md)
+
 ## How to install
 The GUI version is recommended for inexperienced users
 1. Get the GUI .exe from the releases page on the Github repo or from the bin directory in the repo
