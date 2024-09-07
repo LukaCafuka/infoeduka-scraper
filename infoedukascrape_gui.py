@@ -201,8 +201,9 @@ if __name__ == '__main__':
     descLabel.grid(row=2, column=0)
 
     # console textbox
-    consoleText = ttk.Text(root, wrap="word", height=12, state="normal")
+    consoleText = tk.Text(root, wrap="word", height=12, state="normal")
     consoleText.grid(row=3, column=0, padx=10, pady=0, sticky="ew")
+
 
     # redirect stdout and stderr to the text widget
     sys.stdout = RedirectedConsole(consoleText)
